@@ -38,7 +38,7 @@
 | Fairseq | 39.38|
 | **T5** | **39.76** |
 
-### **ตัวอย่างประโยค**
+### Example Sentences
 | English Lyrics |We 40 deep in the lobby.|
 |-----------| ----------|
 | Gold |เพราะเรามากัน 40 คนในล็อบบี้|
