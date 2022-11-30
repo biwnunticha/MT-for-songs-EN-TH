@@ -1,4 +1,4 @@
-# Project Tiltle
+# Machine translation for songs (EN-TH)
 
 ## Introduction
 - Motivation: Why is this task interesting or important?
@@ -36,6 +36,14 @@ How did it go? + Interpret results.
 |-----------| ----------|
 | fairseq | 46.7|
 | **T5** | **55.7** |
+
+| English Lyrics |We 40 deep in the lobby|
+|-----------| ----------|
+| Gold |เพราะเรามากัน40คนในล็อบบี้|
+| Fairseq |เราดื่มเหล้ากันในล็อบบี้|
+| T5 |เราอยู่ในล็อบบี้|
+| SCB-MT |พวกเรา40ลึกลงไปในล็อบบี้|
+
 
 ## Conclusion
 - What task? What did we do?
