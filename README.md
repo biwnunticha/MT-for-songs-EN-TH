@@ -17,8 +17,8 @@
 ## Dataset
 <p>We use the lyrics and translations from <a href='https://www.aelitaxtranslate.com'>aelitatranslate</a>. The owner of this website is an English tutor. He also has a lot of experience in song translations since he has been active for more than 10 years. We have thoroughly checked the translations on the website and decided to use them as our data sets.
 
-<p>Our data sets contain more than 280,000 sentences including English lyrics and translations in Thai. We cleaned the data by cutting out the punctuations and deleting some sentences that are in other languages. In tokenization, we use attacut to tokenize Thai sentences.
- 
+<p>Our data sets contain more than 280,000 sentences including English lyrics and translations in Thai. We cleaned the data by cutting out the punctuations and deleting some sentences that are in other languages. In tokenization, we used attacut to tokenize Thai sentences. After that, we split data sets into train sets, dev sets, and test sets. Train sets contain 284,951 sentences which is 99% of data sets. Dev sets contain 1,438 sentences and Test sets contain 860 sentences.
+
 ## Experiment Setup
 <p>Beside the plain transformer base model, Fairseq. T5, the pre-trained transformer model, has been chosen to help improve the performance of Fairseq. The model has been pre-trained before on an open-source pre-training dataset, called the Colossal Clean Crawled Corpus (C4). 
 
