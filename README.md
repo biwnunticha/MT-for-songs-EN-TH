@@ -1,7 +1,7 @@
 # Machine translation for songs (EN-TH)
  
 ## Introduction
-<p>In the present day, Thai people enjoy listening to English songs due to their popularity. However, people are having trouble translating the songs from English to Thai because it requires more knowledge to understand some idioms and hidden meanings of the song. Furthermore, translations in some traditional ways take more time and sometime inaccurate so we would like to train Machine Translation that can perform song translation task from English to Thai that is much faster than in the traditional way. 
+<p>In the present day, Thai people enjoy listening to English songs due to their popularity. However, people are having trouble translating the songs from English to Thai because it requires more knowledge to understand some idioms and hidden meanings of the song. Furthermore, translations in some traditional ways take more time and are sometimes inaccurate so we would like to train Machine Translation that can perform song translation tasks from English to Thai that is much faster than in the traditional way. 
 
 <p>There was some previous work that developed Machine Translation from English to Thai such as ParSit (Paisarn Charoenpornsawat Virach Sornlertlamvanich and Thatsanee Charoenporn,2003) , an English to Thai Machine Translation that uses a rule-based approach in order to perform the task, and SCB-Machine Translation which is a transformer model that trained to perform English to Thai and Thai to English translation task. Disadvantages that the two models have in common is the domain used in training the data. Both use general dataset to train so they would not perform songs translation well as the general dataset usually does not include idioms or any hidden meaning phrases.
 
@@ -17,7 +17,7 @@
 ## Dataset
 <p>We use the lyrics and translations from <a href='https://www.aelitaxtranslate.com'>aelitatranslate</a>. The owner of this website is an English tutor. He also has a lot of experience in song translations since he has been active for more than 10 years. We have thoroughly checked the translations on the website and decided to use them as our data sets.
 
-<p>Our data sets contain more than 280,000 sentences including English lyrics and translations in Thai. We cleaned the data by cutting out the punctuations and deleting some sentences that are in other languages. In tokenization, we used attacut to tokenize Thai sentences. After that, we split data sets into train sets, dev sets, and test sets. Train sets contain 284,951 sentences which are 99% of data sets. Dev sets contain 1,438 sentences and Test sets contain 860 sentences.
+<p>Our data sets contain more than 280,000 sentences including English lyrics and translations in Thai. We cleaned the data by cutting out the punctuations and deleting some sentences that are in other languages. In tokenization, we used attacut to tokenize Thai sentences. After that, we split data sets into train sets, dev sets, and test sets. Train sets contain 284,951 sentences which are 99% of data sets. Dev sets contain 1,438 sentences and Test sets contain 860 sentences. We also deleted repeated lyrics in Test sets that have already appeared in Train sets and Dev sets.
 
 ## Experiment Setup
 <p>Beside the plain transformer base model, Fairseq. T5, the pre-trained transformer model, has been chosen to help improve the performance of Fairseq. The model has been pre-trained before on an open-source pre-training dataset, called the Colossal Clean Crawled Corpus (C4). 
